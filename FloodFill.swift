@@ -37,9 +37,9 @@ func floodFill(){
 
 
    
-        for x in stride(from: width-1, to: -1, by: -1){
-            for y in stride(from: height-1, to: -1, by: -1){
-                if square[x][y] == 1 {
+        for x in stride(from: height-1, to: -1, by: -1){
+            for y in stride(from: width-1, to: -1, by: -1){
+                if square[x][y] == 1{
                     square[x-1][y] = square[x][y] + 1
                     square[x][y-1] = square[x][y] + 1
                 }
